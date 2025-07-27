@@ -1,0 +1,34 @@
+.footer {
+    margin-top: 60px;
+}
+.footer-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-direction: column;
+}
+.footer__top{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 180px;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+.footer__column {
+
+}
+.footer__column h4 {
+    font-size: 14px;
+    font-weight: bold;
+}
+.footer__column ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.footer__column ul li a {
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+}

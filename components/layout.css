@@ -1,0 +1,40 @@
+.layout {
+    width: 100%;
+    margin: 0 auto;
+    /*border: 1px solid black;*/
+    display: grid;
+    grid-template-columns: minmax(0px, 360px) repeat(8, 150px) minmax(0px, 360px);
+    grid-template-rows: 120px 55px auto auto auto;
+    background-color: #F5F5F5;
+    min-height: 100vh;
+}
+.header {
+    grid-column: 1/ -1;
+    grid-row: 1/2;
+}
+.main-nav {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+
+}
+.carousels {
+    grid-column: 2/10;
+    grid-row: 3/4;
+    margin: 30px 0;
+}
+.sidebar {
+    grid-column: 2/4;
+    grid-row: 4/5;
+    margin-right: 30px;
+
+}
+.main {
+    grid-column: 4/10;
+    grid-row: 4/5;
+
+}
+.footer {
+    grid-column: 1/-1;
+    grid-row: 5/6;
+    border-top: 1px solid black;
+}

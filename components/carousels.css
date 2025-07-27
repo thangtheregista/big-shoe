@@ -1,0 +1,20 @@
+.carousels-wrapper {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.custom-carousel {
+    width: 100%;
+    overflow: hidden;
+}
+.custom-carousel .carousel-item {
+    /*height: 350px;*/
+    width: 100%;
+}
+.custom-carousel .carousel-item img {
+    object-fit: cover;
+    object-position: center center;
+    display: block;
+}

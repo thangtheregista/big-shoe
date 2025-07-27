@@ -1,0 +1,50 @@
+.filtered-product-section {
+    display: flex;
+    flex-direction: column;
+}
+.filtered-section-header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.filtered-section-header h2 {
+    font-size: 24px;
+    font-weight: 600;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0
+}
+.filtered-section-header .sort-bar {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 14px;
+    align-items: center;
+
+}
+.filtered-product-section .sort-bar label {
+}
+#sort {
+    border: 1px solid #f0f0f0;
+    outline: none;
+    text-align: center;
+    padding: 5px 30px;
+    text-align-last: center;
+    appearance: none;
+    width: 200px;
+}
+#sort option {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 2px solid red;
+}

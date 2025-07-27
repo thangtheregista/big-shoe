@@ -1,0 +1,131 @@
+.main-nav {
+    background-color: red;
+    border: 1px dashed white;
+    display: flex;
+    justify-content: center;
+    height: 55px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.main-nav-wrapper {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 0 20px 0 0;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.nav-links li {
+    padding: 0 15px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid white;
+    position: relative;
+}
+.nav-links .active {
+    background-color: #ff5722;
+}
+.nav-links > li:hover {
+    background-color: #ff5722;
+}
+.nav-links li:last-child {
+    border-right: none;
+}
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+.dropdown {
+    position: absolute !important;
+    top: 100%;
+    left: 0;
+    background: white;
+    display: none;
+    flex-direction: column;
+    min-width: 200px;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+.dropdown li {
+    padding: 15px 15px;
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    white-space: nowrap;
+    border-bottom: 1px solid #f0f0f0;
+    position: relative;
+}
+.dropdown li:last-child {
+    border-bottom: none;
+}
+
+.dropdown li a {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.dropdown li:hover > a {
+    color: #ff5722;
+}
+.dropdown-submenu {
+    position: absolute !important;
+    top: 0;
+    left: 100%;
+    background: white;
+    display: none;
+    flex-direction: column;
+    min-width: 200px;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li:hover > .dropdown {
+    display: flex;
+}
+.dropdown li:hover > .dropdown-submenu {
+    display: flex;
+}
+.home-icon {
+    margin-right: 5px;
+    color: white;
+    font-size: 14px;
+}
+.hotline {
+    padding: 0 15px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.hotline img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+
+}
